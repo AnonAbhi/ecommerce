@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <!--  -->
+    <link rel="stylesheet" href="assignment6.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav1">
+            <div class="header">
+                <div class="logo">
+                    <img id="logo" src="ecomlogo.jpg" alt="">
+                </div>
+                <div class="searchbar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="search" type="text" placeholder="search here...">
+                </div>
+                <div class="login">
+                    <i class="fa-solid fa-user"></i>
+                    Login
+                    
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart" class="hide">0</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="mainnav">
+            <div class="maindash">
+                <div class="dash"><a id="dash" href=""><i class="fa-solid fa-bars"></i></a>
+                    <div class="vnav">
+                        <div class="vlink"><a href="">Your Cart</a></div>
+                        <div class="vlink"><a href="">Wishlist</a></div>
+                        <div class="vlink"><a href="">Your Order</a></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="linknav">
+                <div class="link"><a href="">Home</a></div>
+                <div class="link"><a href="">Shop</a></div>
+                <div class="link"><a href="">Deals</a></div>
+                <div class="link"><a href="">New Arrivals</a></div>
+                <div class="link"><a href="">Best Seller</a></div>
+                <div class="link"><a href="">Help</a></div>
+                <div class="link"><a href="">Contact Us &#x1F4DE;</a></div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="products">
+                <img class="img" src="shoe1.jpg" alt="">
+                <div class="productnm">Footwear For Men</div>
+                <button onclick="UpdateCart()">Add To Cart</button>
+            </div>
+            <div class="products">
+                <img class="img" src="shoe2.jpg" alt="">
+                <div class="productnm">Footwear For Women</div>
+                <button onclick="UpdateCart()">Add To Cart</button>
+
+            </div>
+            <div class="products">
+                <img class="img" src="menjaens.jpg" alt="">
+                <div class="productnm">Jeans For Men</div>
+                <button onclick="UpdateCart()">Add To Cart</button>
+
+            </div>
+            <div class="products">
+                <img class="img" src="womjeans.jpg" alt="">
+                <div class="productnm">Jeans For Women</div>
+                <button onclick="UpdateCart()">Add To Cart</button>
+
+            </div>
+            <div class="products">
+                <img class="img" src="kids.jpg" alt="">
+                <div class="productnm">For Kids</div>
+                <button onclick="UpdateCart()">Add To Cart</button>
+
+            </div>
+            <div class="products">
+                <img class="img" src="baby.jpg" alt="">
+                <div class="productnm">For Baby</div>
+                <button onclick="UpdateCart()">Add To Cart</button>
+
+            </div>
+            <div class="products">
+                <img class="img" src="kurti.jpg" alt="">
+                <div class="productnm">Kurti For Women</div>
+                <button onclick="UpdateCart()">Add To Cart</button>
+
+            </div>
+            <div class="products">
+                <img class="img" src="westernwomen.jpg" alt="">
+                <div class="productnm">Western Wear For Women</div>
+                <button onclick="UpdateCart()">Add To Cart</button>
+
+            </div>
+            <div class="products">
+                <img class="img" src="kurta.jpg" alt="">
+                <div class="productnm">Kurta For Men</div>
+                <button onclick="UpdateCart()">Add To Cart</button>
+
+            </div>
+            <div class="products">
+                <img class="img" src="menjacket.jpg" alt="">
+                <div class="productnm">Jacket For Men</div>
+                <button onclick="UpdateCart()">Add To Cart</button>
+
+            </div>
+            <div class="products">
+                <img class="img" src="tshirt.jpg" alt="">
+                <div class="productnm">T-Shirts For Men</div>
+                <button onclick="UpdateCart()">Add To Cart</button>
+
+            </div>
+            <div class="products">
+                <img class="img" src="denimwomen.jpg" alt="">
+                <div class="productnm">Denim Jackets For Women</div>
+                <button onclick="UpdateCart()">Add To Cart</button>
+
+            </div>
+            <div class="products">
+                <img class="img" src="Denimjackets.jpg" alt="">
+                <div class="productnm">Denim Jackets For Men</div>
+                <button onclick="UpdateCart()">Add To Cart</button>
+
+            </div>
+            <div class="products">
+                <img class="img" src="menformal.jpg" alt="">
+                <div class="productnm">Formal Wear Shirts For Men</div>
+                <button onclick="UpdateCart()">Add To Cart</button>
+
+            </div>
+            <div class="products">
+                <img class="img" src="womenformal.jpg" alt="">
+                <div class="productnm">Formal Wear for Women</div>
+                <button onclick="UpdateCart()">Add To Cart</button>
+
+            </div>
+            <div class="products">
+                <img class="img" src="blazer.jpg" alt="">
+                <div class="productnm">Blazers</div>
+                <button onclick="UpdateCart()">Add To Cart</button>
+
+            </div>
+            <div class="products">
+                <img class="img" src="shervani.jpg" alt="">
+                <div class="productnm">Shervani For Men</div>
+                <button onclick="UpdateCart()">Add To Cart</button>
+
+            </div>
+            <div class="products">
+                <img class="img" src="lehnga.jpg" alt="">
+                <div class="productnm">Lehnga</div>
+                <button onclick="UpdateCart()">Add To Cart</button>
+
+            </div>
+            <div class="products">
+                <img class="img" src="saree.jpg" alt="">
+                <div class="productnm">Saree</div>
+                <button onclick="UpdateCart()">Add To Cart</button>
+
+            </div>
+            <div class="products">
+                <img class="img" src="hoodie.jpg" alt="">
+                <div class="productnm">Hoodies</div>
+                <button onclick="UpdateCart()">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script  -->
+    <script src="assignment6.js"></script>
+</body>
+
+</html>
